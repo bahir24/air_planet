@@ -31,6 +31,7 @@ body {
 .wrapper {
     position: relative;
     height: 1937px;
+    width: 100%;
 }
 
 .header {
@@ -74,7 +75,7 @@ body {
     opacity: 0.7;
 }
 
-/* .page-content {
+.page-content {
     float: right;
     width: 85%;
 }
@@ -105,15 +106,15 @@ body {
     position: absolute;
 }
 
-/* .sidebar {
+.sidebar {
     float: left;
     width: 15%;
     height: 100%;
-} */ */
+}
 
-/* .footer__container {
+.footer__container {
     padding-bottom: 90px;
-} */
+}
 
 .footer {
     position: absolute;
@@ -122,8 +123,8 @@ body {
     background-color: #4b73b5;
     bottom: 0;
 }
-/* .footer__logo .footer__social .footer__description {
+.footer__logo .footer__social .footer__description {
     display: inline-block;
     position: absolute;
-} */
+}
 
