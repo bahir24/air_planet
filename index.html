@@ -10,13 +10,15 @@
     <body>
         <div class="wrapper">
             <header class="header">
-                <a href="#" class="logo">
-                    <img src="./air_planet_png/logo_company.png" class="logo__image" alt="Торговый знак компании">
-                </a>
-                <address class="contacts">
-                    <a href="tel:+78000039210" class="contacts__phone">8(800)00-392-10</a>
-                    <div class="contacts__work-time">График работы</div>
-                </address>
+                <div class="header__container">
+                    <a href="#" class="logo">
+                        <img src="./air_planet_png/logo_company.png" class="logo__image" alt="Торговый знак компании">
+                    </a>
+                    <address class="contacts">
+                        <a href="tel:+78000039210" class="contacts__phone">8(800)00-392-10</a>
+                        <div class="contacts__work-time">График работы</div>
+                    </address>
+                </div>
             </header>
             <div class="page">
                 <div class="page-content">
@@ -24,17 +26,14 @@
                         <img src="./air_planet_png/main_logo/main_logo.png" class="main-logo__plane" alt="Самолет"></img>
                     </div>
                     <div class="tariff">
-                        <h2 class="tarif__head">Тарифы</h2>
+                        <h2 class="tariff__head">Тарифы</h2>
                         <ul class="tariff__block">
                             <li class="tariff__type">
-                                <div class="tariff__label">
-                                    <div class="tariff__label-ground"></div>
+                                <div class="tariff__label">                                   
                                     <img class="tariff__label-icon" src="./air_planet_png/tariff_icon/flower.png" alt="Цветок">
                                 </div>
-                                <div class="tariff__description">
-                                    <div class="tariff__name">
-                                        <h3 class="tariff__name-head">Стандарт</h3>
-                                    </div>
+                                <div class="tariff__description">                                    
+                                    <h3 class="tariff__name">Стандарт</h3>                                    
                                     <p class="tariff__character">Создан для вашего комфортного отдыха
                                     </p>
                                     <ul class="tariff__offer">
@@ -46,14 +45,11 @@
                                 </div>
                             </li>
                             <li class="tariff__type">
-                                <div class="tariff__label">
-                                    <div class="tariff__label-ground"></div>
+                                <div class="tariff__label">                                   
                                     <img class="tariff__label-icon" src="./air_planet_png/tariff_icon/star.png" alt="Звезда">
                                 </div>
-                                <div class="tariff__description">
-                                    <div class="tariff__name">
-                                        <h3 class="tariff__name-head">Премиум</h3>
-                                    </div>
+                                <div class="tariff__description">                                    
+                                    <h3 class="tariff__name">Премиум</h3>                                    
                                     <p class="tariff__character">Для любителей хороших впечатлений
                                     </p>
                                     <ul class="tariff__offer">
@@ -65,15 +61,11 @@
                                 </div>
                             </li>
                             <li class="tariff__type">
-                                <div class="tariff__label">
-                                    <div class="tariff__label-ground">
-                                    </div>   
+                                <div class="tariff__label">                                   
                                     <img class="tariff__label-icon" src="./air_planet_png/tariff_icon/palette.png" alt="Палитра">
                                 </div>
-                                <div class="tariff__description">
-                                    <div class="tariff__name">
-                                        <h3 class="tariff__name-head">Лакшери</h3>
-                                    </div>
+                                <div class="tariff__description">                                    
+                                    <h3 class="tariff__name">Лакшери</h3>                                    
                                     <p class="tariff__character">Всё самое лучшее и незабываемое
                                     </p>
                                     <ul class="tariff__offer">
@@ -140,7 +132,7 @@
                                         <a href="#" class="pagination__prev-link">&lt;</a>
                                     </div>
                                     <ul class="pagination__pages">
-                                        <li class="pagination__page">
+                                        <li class="pagination__page pagination__active">
                                             <a href="#" pagination__page-link>1</a>
                                         </li>
                                         <li class="pagination__page">
@@ -171,19 +163,19 @@
                     </div>
                 <aside class="sidebar">
                     <nav class="menu">
-                        <ul class="menu-list">
+                        <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="" class="menu__link">
+                                <a href="#" class="menu__link">
                                     <div class="menu__icon">
-                                        <img src="/air_planet_png/menu_icons/main_icon.png" alt="Стрелка" class="menu__icon-pic">
+                                        <img src="./air_planet_png/menu_icons/main_icon.png" alt="Стрелка" class="menu__icon-pic">
                                     </div>
                                     <div class="menu__title">Главная</div>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">
+                                <a href="#" class="menu__link">
                                     <div class="menu__icon">
-                                        <img src="/air_planet_png/menu_icons/feed_icon.png" alt="Звезда" class="menu__icon-pic">
+                                        <img src="./air_planet_png/menu_icons/feed_icon.png" alt="Звезда" class="menu__icon-pic">
                                     </div>
                                     <div class="menu__title">Отзывы</div>
                                 </a>
@@ -201,38 +193,48 @@
                 </aside>
             </div>                   
             <footer class="footer">
-                <!-- <div class="container_footer"> -->
-                <div class="footer__description">
-                        <p>Сделано с любовью и старанием <br>
-                        на курсе «HTML + CSS» в <a href="#" class="footer_description-loftschool">LoftSchool</a><br>
-                        Автор работы: <span class="footer__description-autor">Прохладов Вадим</span></p>
-                </div>
-                <div class="footer__logo">
-                    <a href="#" class="footer__logo-link">
-                        <img src="./air_planet_png/logo_company.png" class="logo__image" alt="Торговый знак компании">
-                    </a>
-                </div>
-                <div class="footer__social">
-                    <h3 class="footer__social-head">Наши социальные сети</h3>
-                    <ul class="footer_social-icons">
-                        <li class="footer__social-icon">
-                            <img src="./air_planet_png/social_icons/vk.png" alt="Вконтакте" class="footer__social-pic">
-                        </li>
-                        <li class="footer__social-icon">
-                            <img src="./air_planet_png/social_icons/fb.png" alt="Фейсбук" class="footer__social-pic">
-                        </li>
-                        <li class="footer__social-icon">
-                            <img src="./air_planet_png/social_icons/google.png" alt="Гугл" class="footer__social-pic">
-                        </li>
-                        <li class="footer__social-icon">
-                            <img src="./air_planet_png/social_icons/twitter.png" alt="Твиттер" class="footer__social-pic">
-                        </li>
-                        <li class="footer__social-icon">
-                            <img src="./air_planet_png/social_icons/mail.png" alt="Мейл.ру" class="footer__social-pic">
-                        </li>
-                    </ul>
-                </div> 
-            <!-- </div>                             -->
+                <div class="footer__container">
+                    <div class="footer__description">
+                            <p>Сделано с любовью и старанием <br>
+                            на курсе «HTML + CSS» в <a href="#" class="footer_description-loftschool">LoftSchool</a><br>
+                            Автор работы: <span class="footer__description-autor">Прохладов Вадим</span></p>
+                    </div>
+                    <div class="footer__logo">
+                        <a href="#" class="footer__logo-link">
+                            <img src="./air_planet_png/logo_company.png" class="footer__logo-image" alt="Торговый знак компании">
+                        </a>
+                    </div>
+                    <div class="footer__social">
+                        <h3 class="footer__social-head">Наши социальные сети</h3>
+                        <ul class="footer__social-icons">
+                            <li class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="./air_planet_png/social_icons/vk.png" alt="Вконтакте" class="footer__social-pic">
+                                </a>
+                            </li>
+                            <li class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="./air_planet_png/social_icons/fb.png" alt="Фейсбук" class="footer__social-pic">
+                                </a>
+                            </li>
+                            <li class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="./air_planet_png/social_icons/google.png" alt="Гугл" class="footer__social-pic">
+                                </a>
+                            </li>
+                            <li class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="./air_planet_png/social_icons/twitter.png" alt="Твиттер" class="footer__social-pic">
+                                </a>
+                            </li>
+                            <li class="footer__social-icon">
+                                <a href="#" class="footer__social-link">
+                                    <img src="./air_planet_png/social_icons/mail.png" alt="Мейл.ру" class="footer__social-pic">
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>                            
             </footer>
         </div>
     </body>

@@ -41,13 +41,24 @@ body {
     width: 1100px;
     margin: 0 auto;
     
+    
 }
 
 .header {
+    position: relative;
+    left: -300%;
     height: 77px;
-    width: 100%;
+    width: 700%;
     background-color: #4b73b5;
     margin-bottom: 13px;
+    
+}
+
+.header__container {
+    position: relative;
+    left: 3300px;
+    width: 1100px;
+    height: 100%;
 }
 
 .contacts {
@@ -89,7 +100,7 @@ body {
     margin: 0 auto;
     float: right;
     width: 900px;
-    height: 1790px;
+    height: 100%;
 }
 
 .main-logo {
@@ -133,7 +144,7 @@ body {
 
 
 
-.tariff h2{
+.tariff__head {
     font-size: 49px;
     margin-bottom: 20px;
 }
@@ -148,11 +159,7 @@ body {
     margin: auto;
     margin-bottom: 30px;
     border-radius: 34px;
-    
-}
-
-.tariff__label-ground {
-    height: 68px;
+      
 }
 
 .tariff__label-icon {
@@ -194,6 +201,8 @@ body {
 
 
 .tariff__description {
+    position: relative;
+    width: 250px;
     /* display: inline; */
     /* font-size: 18px; */
     line-height: 30px;
@@ -222,8 +231,8 @@ li.tariff__services {
     font-weight: light-italic;
     letter-spacing: -1.07px;;
 }
-.tariff__price-curr {
 
+.tariff__price::first-letter {
     font-size: 32px;
 }
 
@@ -249,12 +258,11 @@ li.tariff__services {
     /* padding: 40px 0; */
     padding-top: 30px;
     padding-bottom: 30px;
-    /* border-bottom: 2px solid #f5f5f5; */
+    border-bottom: 2px solid #f5f5f5;
 }
 
-.news__list > li:nth-child(2) {
-    border-top: 2px solid #f5f5f5;
-    border-bottom: 2px solid #f5f5f5;
+.news__list > li:last-child {
+    border: none;
 }
 
 .news__icon {
@@ -363,19 +371,30 @@ li.tariff__services {
     /* left: 0; */
 }
 
-.pagination__controls ul {
+.pagination__pages {
     display: inline-block;
     position: relative;
     
     width: 199px;
 }
 
-.pagination__controls li {
+.pagination__page {
     display: inline-block;
-    
+    border: none;
     width: 25px;
     height: 25px;
     /* margin-right: 16px; */
+}
+
+.pagination__active > a {
+    
+    width: 25px;
+    height: 25px;
+    background-color: #4b73b5;
+    color: white;
+    border-radius: 2px;
+    vertical-align: middle;
+    line-height: 25px;
 }
 
 .sidebar {
@@ -430,8 +449,9 @@ li.tariff__services {
 
 .footer {
     position: absolute;
-    /* height: 4%; */
-    width: 100%;
+    height: 77px;
+    width: 700%;
+    left: -300%;
     /* padding: 10px; */
     background-color: #4b73b5;
     bottom: 0;
@@ -439,10 +459,17 @@ li.tariff__services {
     
 }
 
+.footer__container {
+    position: relative;
+    left: 3300px;
+    width: 1100px;
+    height: 100%;
+}
+
 .footer__description {
     position: relative;
     display: inline-block;
-    top: 10px;
+    top: 15%;
     left: 10px;
     /* margin-top: 5px; */
     /* margin-right: 20px; */
@@ -454,7 +481,7 @@ li.tariff__services {
 .footer__logo  {
     position: relative;
     display: inline-block;
-    top: 10px;
+    top: 15%;
     width: 33%;
     height: 60px;
     text-align: center;
@@ -463,26 +490,31 @@ li.tariff__services {
 }
 
 .footer__social {
-    top:10px;
+    top: 15%;
     display: inline-block;
     position: relative;
     width: 33%;
     left: 13%;
+    
     /* vertical-align: middle; */
 }
 
-.footer__social ul {
+
+.footer__social-icons {
     margin: 0;
     padding: 0;
+    margin-top: 8px;
 }
 
 
 
 
-.footer__social li {
+.footer__social-icon {
     display: inline-block;
     position: relative;
     width: 20px;
+    height: 20px;
+    margin-right: 10px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -490,8 +522,13 @@ li.tariff__services {
 
 }
 
-.footer__social img {
-    vertical-align: middle;
+.footer__social-pic {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .footer__social h3 {
