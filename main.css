@@ -45,6 +45,7 @@ body {
 
 .header {
     height: 77px;
+    width: 100%;
     background-color: #4b73b5;
     margin-bottom: 13px;
 }
@@ -88,6 +89,7 @@ body {
     margin: 0 auto;
     float: right;
     width: 900px;
+    height: 1790px;
 }
 
 .main-logo {
@@ -119,11 +121,13 @@ body {
 }
 
 .tariff {
-    width: 748px;
-    height: 530px;
+    width: 828px;
+    height: 533px;
+    margin-bottom: 60px;
 }
-.tariff__block ul {
+.tariff__block  {
     display: block;
+    height: 456px;
     
 }
 
@@ -131,6 +135,7 @@ body {
 
 .tariff h2{
     font-size: 49px;
+    margin-bottom: 20px;
 }
 
 
@@ -140,12 +145,17 @@ body {
     background-color: #4b73b5;
     width: 68px;
     height: 68px;
-    margin: 25px auto;
+    margin: auto;
+    margin-bottom: 30px;
     border-radius: 34px;
     
 }
 
-.tariff__label img {
+.tariff__label-ground {
+    height: 68px;
+}
+
+.tariff__label-icon {
     position: absolute;
     margin: auto;
     top: 0;
@@ -155,36 +165,39 @@ body {
  
 }
 
-.tariff h3{
-    display: inline;
+.tariff__name {
+    height: 70px;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2.88px;
-    }
+}
 
-.tariff__block li {
+/* .tariff__name-head {
+
+} */
+
+.tariff__type {
     display: inline-block;
     margin-right: 20px;
-    width: 30%;
-    height: 100%;
+    width: 250px;
+    height: 416px;
+    padding-top: 40px;
     text-align: center;
+    font-size: 18px;
     /* border: 1px solid #e8e9ed; */
 }
 
-.tariff__block li:ntn-child(2) {
-    display: inline-block;
-    width: 25%;
-    height: 100%;
-    text-align: center;
-    
+.tariff__block > li:nth-child(2)  {
+     
     border: 1px solid #e8e9ed;
 }
 
 
 .tariff__description {
-    display: inline;
-    font-size: 18px;
+    /* display: inline; */
+    /* font-size: 18px; */
     line-height: 30px;
+    height: 310px;
 }
 
 .tariff__offer ul {
@@ -207,48 +220,53 @@ li.tariff__services {
     margin-top: 25px;
     font-size: 54px;
     font-weight: bold;
+    letter-spacing: -1.07px;;
 }
 .tariff__price-curr {
     font-size: 32px;
 }
 
 .news {
-    height: 100%;
-    width: 100%;
+    height: 832px;
+    width: 807px;
     /* border: 1px solid black; */
+    margin-bottom: 60px;
 }
 
 .news__head {
+    
     font-size: 49px;
     margin-bottom: 72px;
 }
 
 .news__item {
-    position: relative;
-    width: 100%;
+    /* display: block; */
+    width: 824px;
     height: 165px;
-    padding: 40px 0;
+    margin-bottom: 60px;
+    /* padding: 40px 0; */
 }
 
 .news__icon {
 
-    position: absolute;
+    position: relative;
     display: inline-block;
-    top: 10px;
+    /* top: 10px; */
     width: 160px;
     height: 160px;
-    margin-left: -20px;
+    /* margin-left: -20px; */
 }
 
 .news__description {
-    line-height: 30px;
-    left: 160px;
-    position: absolute;
+    position: relative;
     display: inline-block;
+    font-size: 11px;
+    line-height: 30px;
+    left: 20px; 
     top: 0;
-    width: 780px;
+    width: 652px;
     height: 165px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 .news__date {
@@ -260,7 +278,7 @@ li.tariff__services {
 }
 
 .news__text {
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .pagination {
@@ -402,17 +420,17 @@ li.tariff__services {
     position: absolute;
     /* height: 4%; */
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #4b73b5;
     bottom: 0;
     color: white;
-    vertical-align: middle;
+    
 }
 
 .footer__description {
     position: relative;
     display: inline-block;
-    top: 0px;
+    top: 10px;
     /* margin-top: 5px; */
     /* margin-right: 20px; */
     width: 33%;
@@ -423,7 +441,7 @@ li.tariff__services {
 .footer__logo  {
     position: relative;
     display: inline-block;
-    
+    top: 10px;
     width: 33%;
     height: 60px;
     text-align: center;
@@ -432,6 +450,7 @@ li.tariff__services {
 }
 
 .footer__social {
+    top:10px;
     display: inline-block;
     position: relative;
     width: 33%;
