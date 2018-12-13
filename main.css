@@ -31,34 +31,29 @@
 
 body {
     font-family: "roboto", Helvetica, sans-serif;
-    
-
- }
+    line-height: 1.42;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
 
 .wrapper {
     position: relative;
-    height: 1937px;
-    width: 1100px;
-    margin: 0 auto;
-    
-    
+    /* height: 100%;
+    width: 100%; */
 }
 
 .header {
     position: relative;
-    left: -300%;
-    height: 77px;
-    width: 700%;
     background-color: #4b73b5;
-    margin-bottom: 13px;
-    
+    margin-bottom: 13px;    
 }
 
 .header__container {
     position: relative;
-    left: 3300px;
+    height: 77px;
+    margin: 0 auto;
     width: 1100px;
-    height: 100%;
 }
 
 .contacts {
@@ -96,60 +91,50 @@ body {
     opacity: 0.7;
 }
 
+.page {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+.page:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
 .page-content {
     margin: 0 auto;
     float: right;
+    /* clear: right; */
     width: 900px;
     height: 100%;
 }
 
 .main-logo {
     position: relative;
-    height: 300px;
-    width: 1007px;
-    /* left: 40px; */
-    /* background-image: url(./air_planet_png/main_logo/ground.png);
-    background-size: 140% 170%;
-    background-position-x: 100%;
-    background-position-y: 100%;
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
-    margin-top: 40px; */
+    /* height: 300px;
+    width: 1007px; */
 }
 
-/* .main-logo__text {
+/* .main-logo__plane {
     position: absolute;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #221f1f;
-    opacity: 0.4;
-    font-size: 140px;
-    text-align: right;
-
 } */
-.main-logo__plane {
-    position: absolute;
-}
 
 .tariff {
     width: 828px;
     height: 533px;
     margin-bottom: 60px;
 }
+
 .tariff__block  {
     display: block;
-    height: 456px;
-    
+    height: 456px; 
 }
-
-
 
 .tariff__head {
     font-size: 49px;
     margin-bottom: 20px;
 }
-
-
 
 .tariff__label {
     position: relative;
@@ -215,7 +200,7 @@ body {
     
 }
 
-li.tariff__services {
+.tariff__services {
     margin-left: 40px;
     list-style-type: disc;
     text-align: left;
@@ -237,9 +222,9 @@ li.tariff__services {
 }
 
 .news {
-    height: 832px;
-    width: 807px;
-    /* border: 1px solid black; */
+    position: relative;
+    height: 100%;
+    width: 100%;
     margin-bottom: 60px;
 }
 
@@ -252,7 +237,7 @@ li.tariff__services {
 
 .news__item {
     /* display: block; */
-    width: 824px;
+    width: 100%;
     height: 165px;
     /* margin-bottom: 60px; */
     /* padding: 40px 0; */
@@ -302,12 +287,12 @@ li.tariff__services {
 }
 
 .pagination {
-    position: absolute;
-    width: 83%;
-    height: 27px;
+    position: relative;
+    /* width: 83%; */
+    /* height: 27px; */
     
-    padding-left: 265px;
-    
+    margin: 0 auto;
+    text-align: center;
 }
 
 .pagination__display {
@@ -316,8 +301,8 @@ li.tariff__services {
     position: relative;
     color: #656464;
   
-    width: 103px;
-    height: 25px;
+    /* width: 103px;
+    height: 25px; */
     font-size: 14px;
     margin-right: 20px;
     
@@ -327,14 +312,14 @@ li.tariff__services {
     font-family: "roboto";
     position: relative;
     display: inline-block;
-    width: 257px;
+    /* width: 257px; */
     text-align: center;
-    height: 25px;
+    /* height: 25px; */
 
     
 }
 
-.pagination__controls a {
+.pagination__page-link {
     color: black;
     font-weight: bold;
     font-family: "roboto";
@@ -343,39 +328,26 @@ li.tariff__services {
     font-size: 14px;
     display: inline-block;
     text-align: center;
-    height: 25px;
+    /* height: 25px; */
 
     /* border: 1px solid black; */
 }
 
-.pagination__prev {
-    border: 0;
+.pagination__prev, .pagination__next {
     display: inline-block;
-    position: relative;
-    
-    /* margin-right: 15px; */
-    width: 25px;
-    height: 25px;
-
 }
 
 
-.pagination__next  {
-    border: 0;
-    display: inline-block;
-    position: relative;
-    
-    width: 25px;
-    height: 25px;
-    /* top: 0; */
-    /* left: 0; */
+
+.pagination__prev-link, .pagination__next-link {
+    text-decoration: none;
+    color: #000;
 }
+
 
 .pagination__pages {
     display: inline-block;
     position: relative;
-    
-    width: 199px;
 }
 
 .pagination__page {
@@ -386,7 +358,7 @@ li.tariff__services {
     /* margin-right: 16px; */
 }
 
-.pagination__active > a {
+.pagination__active-page {
     
     width: 25px;
     height: 25px;
@@ -399,8 +371,9 @@ li.tariff__services {
 
 .sidebar {
     float: left;
-    width: 190px;
-    height: 1760px;
+    /* clear: left; */
+    width: 200px;
+    height: 100%;
     /* padding-left: 10px; */
 }
 
@@ -450,54 +423,62 @@ li.tariff__services {
 .footer {
     position: absolute;
     height: 77px;
-    width: 700%;
-    left: -300%;
-    /* padding: 10px; */
+    width: 100%;
     background-color: #4b73b5;
-    bottom: 0;
+    bottom: -77px;
     color: white;
     
 }
 
 .footer__container {
     position: relative;
-    left: 3300px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
     width: 1100px;
     height: 100%;
+    font-size: 14px;
 }
 
 .footer__description {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    top: 15%;
-    left: 10px;
-    /* margin-top: 5px; */
-    /* margin-right: 20px; */
-    width: 33%;
+    text-align: left;
+    top: 15px; 
+    left: 20px;
     height: 70%;
-    font-size: 0.7em;
+}
+
+.footer__description-autor {
+    font-weight: bold;
+}
+
+.footer_description-loftschool {
+    color: white;
+    font-weight: bold;
 }
 
 .footer__logo  {
     position: relative;
     display: inline-block;
-    top: 15%;
+    top: 15px;
     width: 33%;
     height: 60px;
-    text-align: center;
-    
-    /* margin-right: 20px; */
 }
 
 .footer__social {
-    top: 15%;
     display: inline-block;
-    position: relative;
-    width: 33%;
-    left: 13%;
-    
-    /* vertical-align: middle; */
+    position: absolute;
+    top: 15px;
+    text-align: left;
+    right: 20px;
 }
+
+.footer__social-head {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
 
 
 .footer__social-icons {
@@ -505,9 +486,6 @@ li.tariff__services {
     padding: 0;
     margin-top: 8px;
 }
-
-
-
 
 .footer__social-icon {
     display: inline-block;
@@ -530,23 +508,3 @@ li.tariff__services {
     bottom: 0;
     left: 0;
 }
-
-.footer__social h3 {
-    /* padding: 0; */
-    margin: 0;
-    /* margin-top: 20px; */
-    /* margin-right: 20px; */
-    /* margin-bottom: 0; */
-}
-
-.footer__description-autor {
-    font-weight: bold;
-}
-
-.footer_description-loftschool {
-    color: white;
-    font-weight: bold;
-}
-
-
-
