@@ -394,6 +394,10 @@ body {
    
 }
 
+.menu__item-active {
+    filter: brightness(0);
+}
+
 .menu__link {
     display: inline-block;
     width: 110px;
