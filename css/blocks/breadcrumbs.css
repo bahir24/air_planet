@@ -1,0 +1,21 @@
+.breadcrumbs__list {
+    display: flex;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 43px;
+    padding-bottom: 25px;
+
+}
+
+.breadcrumbs__item {
+    color: #4b73b5;
+}
+
+.breadcrumbs__item:nth-child(n+2):before {
+    content: "/";
+}
+
+.breadcrumbs__item:last-child, 
+.breadcrumbs__item:last-child a {
+    color: #000;
+}

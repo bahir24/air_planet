@@ -1,0 +1,19 @@
+.contacts {
+    text-align: right;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.contacts__work-time {
+    text-decoration: underline;
+    font-style: normal;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}

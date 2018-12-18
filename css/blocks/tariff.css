@@ -1,0 +1,89 @@
+.tariff {
+    width: 828px;
+    height: 533px;
+    margin-bottom: 60px;
+}
+
+.tariff__block  {
+    display: block;
+    height: 456px; 
+}
+
+.tariff__head {
+    font-size: 49px;
+    margin-bottom: 20px;
+}
+
+.tariff__label {
+    position: relative;
+    background-color: #4b73b5;
+    width: 68px;
+    height: 68px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 34px;  
+}
+
+.tariff__label-icon {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.tariff__name {
+    height: 70px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.88px;
+}
+
+.tariff__type {
+    display: inline-block;
+    margin-right: 20px;
+    width: 250px;
+    height: 416px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tariff__block > li:nth-child(2)  {  
+    border: 1px solid #e8e9ed;
+}
+
+
+.tariff__description {
+    position: relative;
+    width: 250px;
+    line-height: 30px;
+    height: 310px;
+}
+
+.tariff__offer ul {
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.tariff__services {
+    margin-left: 40px;
+    list-style-type: disc;
+    text-align: left;
+    display: list-item;
+    line-height: 30px;
+    width: auto;
+}
+
+.tariff__price {
+    display: block;
+    margin-top: 25px;
+    font-size: 54px;
+    font-weight: light-italic;
+    letter-spacing: -1.07px;;
+}
+
+.tariff__price::first-letter {
+    font-size: 32px;
+}
