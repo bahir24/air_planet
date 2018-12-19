@@ -10,7 +10,12 @@
     background-image: url('../../air_planet_png/reviews/pattern_reservation.png');
     background-size: cover;
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+}
+
+.reservation__text {
+    display: block;
+    max-width: 58%;
 }
 
 .reservation__link-site {
