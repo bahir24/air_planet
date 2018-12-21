@@ -1,5 +1,6 @@
 .header {
     background-color: #4b73b5;
-    min-height: 77px;
+    /* min-height: 74px; */
     display: flex;
+    margin-bottom: 13px;
 }

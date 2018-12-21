@@ -1,78 +1,107 @@
 .tariff {
-    width: 828px;
-    height: 533px;
-    margin-bottom: 60px;
-}
-
-.tariff__block  {
-    display: block;
-    height: 456px; 
+    margin-bottom: 94px;
+    padding-left: 10px;
+    width: 89%;
 }
 
 .tariff__head {
     font-size: 49px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 28px;
+
 }
 
-.tariff__label {
-    position: relative;
-    background-color: #4b73b5;
-    width: 68px;
-    height: 68px;
-    margin: auto;
-    margin-bottom: 30px;
-    border-radius: 34px;  
-}
-
-.tariff__label-icon {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.tariff__name {
-    height: 70px;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 2.88px;
+.tariff__block {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;   
+    list-style-position: outside;
 }
 
 .tariff__type {
-    display: inline-block;
-    margin-right: 20px;
-    width: 250px;
-    height: 416px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
     padding-top: 40px;
-    text-align: center;
     font-size: 18px;
-}
-
-.tariff__block > li:nth-child(2)  {  
+    margin-right: 20px;
     border: 1px solid #e8e9ed;
 }
 
-
-.tariff__description {
-    position: relative;
-    width: 250px;
-    line-height: 30px;
-    height: 310px;
+.tariff__type:nth-child(2n+1)  {  
+    border: none;
 }
 
-.tariff__offer ul {
-    margin-bottom: 35px;
+.tariff__label {
+    background-color: #4b73b5;
+    box-sizing: border-box;
+    width: 72px;
+    height: 72px;
+    border: none;
+    margin-bottom: 31px;
+    border-radius: 34px;
+}
+
+.tariff__type:nth-child(1) > .tariff__label {
+    background-image: url('../../air_planet_png/tariff_icon/flower.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariff__type:nth-child(2) > .tariff__label  {
+    background-image: url('../../air_planet_png/tariff_icon/star.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariff__type:nth-child(3) > .tariff__label {
+    background-image: url('../../air_planet_png/tariff_icon/palette.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariff__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    line-height: 30px;
+    
+}
+
+.tariff__name {
+    display: block;
+    line-height: 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.tariff__character {
+    text-align: center;
+    margin-bottom: 6px;
+    padding: 0 22px;
+}
+
+.tariff__offer {
+    margin-bottom: 2px;
     text-align: left;
+   
 }
 
 .tariff__services {
-    margin-left: 40px;
+    padding: 0;
+    padding-left: 10px;
+    margin-left 8px;
+    margin-bottom: 10px;
     list-style-type: disc;
     text-align: left;
     display: list-item;
-    line-height: 30px;
+    line-height: 25px;
     width: auto;
 }
 

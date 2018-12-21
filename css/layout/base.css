@@ -41,7 +41,7 @@ html, body {
     flex: 1;
     align-items: center;
     flex-wrap: wrap;
-    padding: 15px 20px 15px;
+    padding: 12px 21px 17px;
 }
 
 .container__left-col {
@@ -61,12 +61,13 @@ html, body {
 
 .page-content {
     order: 10;
-    width: 82%;
+    width: 87%;
     height: 100%;
+    padding-left: 2px;
 }
 
 .sidebar {
-    width: 18%;
+    width: 13%;
     order: -10;
     width: 200px;
     height: 100%;
