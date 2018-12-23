@@ -1,7 +1,6 @@
 .tariff {
-    margin-bottom: 94px;
-    padding-left: 10px;
-    width: 89%;
+    margin-bottom: 49px;
+    width: 90%;
 }
 
 .tariff__head {
@@ -19,11 +18,12 @@
 }
 
 .tariff__type {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    padding-top: 40px;
+    width: 33%;
+    padding: 40px 31px 36px;
     font-size: 18px;
     margin-right: 20px;
     border: 1px solid #e8e9ed;
@@ -43,19 +43,19 @@
     border-radius: 34px;
 }
 
-.tariff__type:nth-child(1) > .tariff__label {
+.tariff__label-flower {
     background-image: url('../../air_planet_png/tariff_icon/flower.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.tariff__type:nth-child(2) > .tariff__label  {
+.tariff__label-star {
     background-image: url('../../air_planet_png/tariff_icon/star.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.tariff__type:nth-child(3) > .tariff__label {
+.tariff__label-palette {
     background-image: url('../../air_planet_png/tariff_icon/palette.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -64,16 +64,12 @@
 .tariff__description {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
     width: 100%;
-    line-height: 30px;
-    
+ 
 }
 
 .tariff__name {
-    display: block;
-    line-height: 12px;
+    text-align: center;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2.3px;
@@ -83,31 +79,31 @@
 
 .tariff__character {
     text-align: center;
-    margin-bottom: 6px;
-    padding: 0 22px;
+    margin-bottom: 9px; 
+    line-height: 30px;
 }
 
 .tariff__offer {
-    margin-bottom: 2px;
-    text-align: left;
-   
+    list-style-position: outside;
+    margin-bottom: 12px;
+    padding-left: 21px;
 }
 
-.tariff__services {
-    padding: 0;
-    padding-left: 10px;
-    margin-left 8px;
-    margin-bottom: 10px;
-    list-style-type: disc;
-    text-align: left;
-    display: list-item;
-    line-height: 25px;
-    width: auto;
+.tariff__services {        
+    margin-bottom: 14px; 
+    
+}
+
+.tariff__services::before {
+    content: "\2022";
+    margin-right: 22px;
+    position: absolute;
+    margin-left: -27px;
 }
 
 .tariff__price {
-    display: block;
-    margin-top: 25px;
+   
+    text-align: center;
     font-size: 54px;
     font-weight: light-italic;
     letter-spacing: -1.07px;;

@@ -1,18 +1,11 @@
-.menu {
-    position: relative;
-    
+.menu {  
     margin: 0;
     padding-top: 32px;
-    padding-left: 20px;
-    /* margin-top: 32px;
-    margin-left: 18px; */
-    /* width: 110px; */
-    /* height: 116px; */
+    padding-left: 21px;
 }
 
-.menu__item {
-    height: 18px;
-    margin-bottom: 30px;
+.menu__item {  
+    margin-bottom: 29px;
 }
 
 .menu__item-active {
@@ -20,27 +13,29 @@
 }
 
 .menu__link {
-    display: inline-block;
-    width: 110px;
-    height: 20px;
+    display: flex;
+align-items: center;
+    width: 100%;
+    
     text-decoration: none;
     color: #4b73b5;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.menu__icon {
-    display: inline-block;
-    margin-right: 8px;
-    width: 25px;
-}
-
-.menu__title {
-    position: relative;
-    display: inline-block;
-    width: 60px;
     font-size: 13px;
-    letter-spacing: 1.4px;
-    bottom: 4px;   
+    letter-spacing: 1.5px;
 }
 
+.menu__index::before {
+    content: url('../../air_planet_png/menu_icons/main_icon.png');
+    margin-right: 18px;
+}
+
+.menu__reviews::before {
+    content: url('../../air_planet_png/menu_icons/feed_icon.png');
+    margin-right: 16px;
+}
+
+.menu__team::before {
+    content: url('../../air_planet_png/menu_icons/team_icon.png');
+    margin-right: 13px;
+}
