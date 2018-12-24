@@ -110,13 +110,12 @@
                             <div class="pagination__controls">
                                 <div class="pagination__prev">
                                     <a href="#" class="pagination__prev-link">
-                                        <img src="./air_planet_png/pagination/Pagination_prev.png" alt="Назад" class="pagination__prev-pic">
                                     </a>
                                 </div>
                                 <ul class="pagination__pages">
                                     <li class="pagination__page pagination__active-page">
                                         <a href="#" class="pagination__page-link">1</a>
-                                        
+
                                     </li>
                                     <li class="pagination__page">
                                         <a href="#" class="pagination__page-link">2</a>
@@ -139,14 +138,13 @@
                                 </ul>
                                 <div class="pagination__next">
                                     <a href="#" class="pagination__next-link">
-                                        <img src="./air_planet_png/pagination/pagination_next.png" alt="Вперед" class="pagination__next-pic">
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-                <!-- BASE -->
+                
                 <aside class="sidebar">
                     <nav class="menu">
                         <ul class="menu__list">
@@ -164,93 +162,95 @@
                 </aside>
 
             </div>
-            <div class="container">
-                <div class="reservation">
-                    <p class="reservation__text">
+            <div class="reservation">
+                <div class="container">
+                    <p class="support">
                         Вопросы по бронированию билетов в нашей авиакомпании принимаются.
-                        Для этого можно оставить <a href="#" class="reservation__link-site">заявку на сайте</a> или же
+                        Для этого можно оставить <a href="#" class="support__link-site">заявку на сайте</a> или же
                         позвонить по номеру
-                        круглосуточной поддержки <a class="reservation__tel" href="tel:+78000039210">8 (800) 00-392-10</a>.
+                        круглосуточной поддержки <a class="support__tel" href="tel:+78000039210">8 (800) 00-392-10</a>.
                     </p>
                 </div>
+
             </div>
-            <div class="container">
-                <div class="myreview">
-                    <form action="./reviews_input.html" enctype="text/plain" method="POST" name="review" class="myreview__container">
-                        <h2 class="myreview__head">Оставить отзыв</h2>
-                        <div class="myreview__insert">
-                            <div class="myreview__name">
-                                <h3 class="myreview__name-head">Ваше имя</h3>
-                                <input type="text" placeholder="Андрей" name="reviuer_name" class="myreview__name-insert">
-                            </div>
-                            <div class="myreview__vk">
-                                <h3 class="myreview__vk-head">Ссылка на профиль VK</h3>
-                                <input type="text" placeholder="vk.com/examlpe" name="reviuer_vk" class="myreview__vk-insert">
-                            </div>
-                            <div class="myreview__text">
-                                <h3 class="myreview__head-text">Текст отзыва</h3>
-                                <textarea placeholder="Мне понравилось" class="myreview__text-input"></textarea>
-                            </div>
-
-                            <div class="myreview__avatar">
-                                <h3 class="myreview__avatar-opt">Отображать фото в отзыве?</h3>
-
-                                <input type="radio" checked="checked" form="review" id="radio-yes" class="myreview__avatar-yes"
-                                    name="radio">
-                                <label class="myreview__avatar-yes-style" for="radio-yes">Да</label>
-
-                                <input type="radio" form="review" class="myreview__avatar-no" id="radio-no" name="radio">
-                                <label class="myreview__avatar-no-style" for="radio-no">Нет</label>
-                            </div>
-                            <button type="button" class="myreview__send"><span class="myreview__send-mark">Отправить</span></button>
-
-                    </form>
-                </div>
-            </div> -->
         </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="container__left-col">
-                    <div class="footer__description">
-                        <p>Сделано с любовью и старанием <br>
-                            на курсе «HTML + CSS» в <a href="#" class="footer_description-loftschool">LoftSchool</a><br>
-                            Автор работы: <span class="footer__description-autor">Прохладов Вадим</span></p>
-                    </div>
-                </div>
-                <div class="container__center-col">
-                    <a href="#" class="logo">
-                        <img src="./air_planet_png/logo_company.png" class="logo__pic" alt="Торговый знак компании">
-                    </a>
-                </div>
-                <div class="container__right-col">
-                    <div class="social">
-                        <h3 class="social__head">Наши социальные сети</h3>
-                        <ul class="social__icons">
-                            <li class="social__icon">
-                                <a href="#" class="social__link social__link-vk">
-                                </a>
-                            </li>
-                            <li class="social__icon">
-                                <a href="#" class="social__link social__link-fb">
-                                </a>
-                            </li>
-                            <li class="social__icon">
-                                <a href="#" class="social__link social__link-gl">
-                                </a>
-                            </li>
-                            <li class="social__icon">
-                                <a href="#" class="social__link social__link-tw">
-                                </a>
-                            </li>
-                            <li class="social__icon">
-                                <a href="#" class="social__link social__link-mail">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="container">
+            <div class="myreview">
+                <form action="./reviews_input.html" enctype="text/plain" method="POST" name="review" class="myreview__container">
+                    <h2 class="myreview__head">Оставить отзыв</h2>
+                    <div class="myreview__insert">
+                        <div class="myreview__autor">
+                            <h3 class="myreview__autor-head">Ваше имя</h3>
+                            <input type="text" placeholder="Андрей" name="reviuer_name" class="myreview__autor-insert">
+                        </div>
+                        <div class="myreview__autor">
+                            <h3 class="myreview__autor-head">Ссылка на профиль VK</h3>
+                            <input type="text" placeholder="vk.com/examlpe" name="reviuer_vk" class="myreview__autor-insert">
+                        </div>
+                        <div class="myreview__text">
+                            <h3 class="myreview__head-text">Текст отзыва</h3>
+                            <textarea placeholder="Мне понравилось" class="myreview__text-input"></textarea>
+                        </div>
+
+                        <div class="myreview__avatar">
+                            <h3 class="myreview__avatar-opt">Отображать фото в отзыве?</h3>
+
+                            <input type="radio" checked="checked" form="review" id="radio-yes" class="myreview__avatar-yes"
+                                name="radio">
+                            <label class="myreview__avatar-yes-style" for="radio-yes">Да</label>
+
+                            <input type="radio" form="review" class="myreview__avatar-no" id="radio-no" name="radio">
+                            <label class="myreview__avatar-no-style" for="radio-no">Нет</label>
+                        </div>
+                        <button type="button" class="myreview__send"><span class="myreview__send-mark">Отправить</span></button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="container__left-col">
+                <div class="maked-by">
+                    <p>Сделано с любовью и старанием <br>
+                        на курсе «HTML + CSS» в <a href="#" class="maked-by__loftschool">LoftSchool</a><br>
+                        Автор работы: <span class="maked-by__name">Прохладов Вадим</span></p>
                 </div>
             </div>
-        </footer>
+            <div class="container__center-col">
+                <a href="#" class="logo">
+                    <img src="./air_planet_png/logo_company.png" class="logo__pic" alt="Торговый знак компании">
+                </a>
+            </div>
+            <div class="container__right-col">
+                <div class="social">
+                    <h3 class="social__head">Наши социальные сети</h3>
+                    <ul class="social__icons">
+                        <li class="social__icon">
+                            <a href="http://www.vk.com" class="social__link social__link-vk">http://www.vk.com
+                            </a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="http://www.facebook.com" class="social__link social__link-fb">http://www.facebook.com
+                            </a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="http://www.google.com" class="social__link social__link-gl">http://www.google.com
+                            </a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="http://www.twitter.com" class="social__link social__link-tw">http://www.twitter.com
+                            </a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="http://www.mail.ru" class="social__link social__link-mail">http://www.mail.ru
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 

@@ -1,33 +1,16 @@
 .reservation {
-    min-height: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    min-height: 170px;
     font-size: 18px;
     line-height: 30px;
     background-color: #4bb56b;
     background-image: url('../../air_planet_png/reviews/pattern_reservation.png');
     background-size: cover;
     color: #fff;
-    margin-bottom: 58px;
+    margin-bottom: 61px;
 }
 
-.reservation__text {
-    display: block;
-    max-width: 58%;
-}
 
-.reservation__link-site {
-    font-weight: bold;
-    color: #fff;
-
-}
-
-.reservation__tel {
-    display: inline;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-}
 

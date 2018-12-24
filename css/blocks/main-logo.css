@@ -1,9 +1,5 @@
 .main-logo {
-    position: relative;
     width: 100%;
-    min-height: 300px;
-    background-image: url('../../air_planet_png/main_logo/main_logo.png');
-
-    background-size: cover;
-    margin-bottom: 5px;
+    overflow: hidden;
+    margin-bottom: 3px;
 }

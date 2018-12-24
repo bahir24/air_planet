@@ -1,0 +1,17 @@
+.support {
+    margin: 0 auto;
+    max-width: 58%;
+}
+
+.support__link-site {
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.support__tel {
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}

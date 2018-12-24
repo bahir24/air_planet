@@ -1,0 +1,14 @@
+.maked-by {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.maked-by__name {
+    font-weight: bold;
+}
+
+.maked-by__loftschool {
+    color: white;
+    font-weight: bold;
+}
