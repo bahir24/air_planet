@@ -41,13 +41,18 @@
     width: 48%;
 }
 
+.myreview__autor-head {
+    font-size: 14px;
+    cursor: pointer;
+}
+
 .myreview__text {
     width: 100%;
     min-height: 120px;
     margin-bottom: 10px;
 }
 
-.myreview__autor-insert,
+
 .myreview__autor-insert {
     padding-left: 10px;
     font-size: 14px;
