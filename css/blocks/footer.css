@@ -1,8 +1,4 @@
 .footer {
-    display: flex;
-    /* min-height: 50px; */
-    width: 100%;
     background-color: #4b73b5;
-    color: white;
 }
 

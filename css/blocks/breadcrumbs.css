@@ -1,8 +1,12 @@
+.breadcrumbs {
+    margin: 30px 0px 24px;
+}
+
 .breadcrumbs__list {
     display: flex;
     font-size: 14px;
     font-style: italic;
-    margin: 30px 0px 24px;
+   
     /* padding-bottom: 24px; */
     /* padding-left: 5px; */
 

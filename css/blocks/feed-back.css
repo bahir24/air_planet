@@ -1,0 +1,80 @@
+.feed-back {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 52px auto;
+    padding: 52px 70px 49px 68px;
+    width: 51%;
+    background-color: #f5f5f5;
+}
+
+.feed-back__head {
+    font-size: 49px;
+    font-weight: bold;
+}
+
+/* .feed-back__insert {
+   
+} */
+
+.feed-back__message {
+    width: 100%;
+}
+
+.feed-back__message-head,
+.feed-back__insert-head,
+.feed-back__avatar-head {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.feed-back__insert-field,
+.feed-back__message-text {
+    display: block;
+    border: none;
+    
+}
+
+.feed-back__insert-field {
+    width: 269px;
+    height: 45px;  
+    /* margin-right: 23px; */
+}
+
+.feed-back__message-text {
+    width: 100%;
+    min-height: 90px;
+    border: 1px solid #4b73b5;
+}
+
+.feed-back__avatar {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 35%;
+}
+
+.feed-back__avatar-radio {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 14px;
+    
+
+}
+
+.feed-back__avatar-input {
+    display: none;
+}
+
+.feed-back__radio-style {
+    background-image: url('../../air_planet_png/forms/hw3_fix/circle_radio.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.feed-back__avatar-input:checked ~ .feed-back__radio-style {
+    background-image: url('../../air_planet_png/forms/radio-checked-point.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}

@@ -27,36 +27,24 @@ html, body {
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*Для размещения нескольких элементов в одной строке*/
     width: 1100px;
     margin: 0 auto;
 }
 
-.container__left-col,
-.container__center-col,
+.container__left-col, 
 .container__right-col {
-    display: flex;
-    justify-content: flex-start;
-    flex: 1;
-    align-items: center;
+    display: flex; /*для организации элементов внутри подблоков*/
+    flex: 1; /*для полного заполнения контейнера тремя подблоками имеющими равную ширину*/ 
     flex-wrap: wrap;
-    padding: 11px 20px 17px;
 }
 
-.container__left-col {
-    order: -10;
-}
+/* .container__left-col {
 
-.container__center-col {   
-    justify-content: center;
-    order: 0;
-   
-}
+} */
 
 .container__right-col {
-    flex-direction: row-reverse;
-    order: 10; 
+    justify-content: flex-end;
 }
 
 .page-content {

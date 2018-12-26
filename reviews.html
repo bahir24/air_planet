@@ -144,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <aside class="sidebar">
                     <nav class="menu">
                         <ul class="menu__list">
@@ -175,74 +175,102 @@
             </div>
         </div>
         <div class="container">
-            <div class="myreview">
-                <form action="./reviews_input.html" enctype="text/plain" method="POST" name="review" class="myreview__container">
-                    <h2 class="myreview__head">Оставить отзыв</h2>
-                    <div class="myreview__insert">
-                        <div class="myreview__autor">
-                            <label for="name1" class="myreview__autor-head">Ваше имя</label>
-                            <input id="name1" type="text" placeholder="Андрей" name="reviuer_name" class="myreview__autor-insert">
-                        </div>
-                        <div class="myreview__autor">
-                            <label for="vk" class="myreview__autor-head">Ссылка на профиль VK</label>
-                            <input id="vk" type="text" placeholder="vk.com/examlpe" name="reviuer_vk" class="myreview__autor-insert">
-                        </div>
-                        <div class="myreview__text">
-                            <h3 class="myreview__head-text">Текст отзыва</h3>
-                            <textarea placeholder="Мне понравилось" class="myreview__text-input"></textarea>
-                        </div>
+            <!-- выравнивает содержимое по центру колонка с заданой шириной -->
+            <!-- <div class="feed-back"> -->
+            <!-- выравнивает блок с формой внутри контейнера -->
 
-                        <div class="myreview__avatar">
-                            <h3 class="myreview__avatar-opt">Отображать фото в отзыве?</h3>
+            <form class="feed-back" name="feed-back">
+                <!-- задать центрирование и сжатие блока до необходимыъх размеров margin:    -->
+                <!-- выровнять элементы формы внутри серого поля padding  -->
 
-                            <input type="radio" checked="checked" form="review" id="radio-yes" class="myreview__avatar-yes"
-                                name="radio">
-                            <label class="myreview__avatar-yes-style" for="radio-yes">Да</label>
+                <!-- action="./reviews_input.html" enctype="text/plain" method="POST" -->
+                <label class="feed-back__head" for="первое поле для ввода">Оставить отзыв</label>
 
-                            <input type="radio" form="review" class="myreview__avatar-no" id="radio-no" name="radio">
-                            <label class="myreview__avatar-no-style" for="radio-no">Нет</label>
-                        </div>
-                        <button type="button" class="myreview__send"><span class="myreview__send-mark">Отправить</span></button>
 
-                </form>
-            </div>
+                <!-- <div class="feed-back__insert"> -->
+
+                <div class="feed-back__insert">
+                    <label class="feed-back__insert-head">Ваше имя
+                        <input class="feed-back__insert-field" id="name" type="text" name="reviuer_name" placeholder="Андрей">
+                    </label>
+                </div>
+
+                <div class="feed-back__insert">
+                    <label for="vk" class="feed-back__insert-head">Ссылка на профиль VK
+                        <input class="feed-back__insert-field" id="vk" type="text" name="reviuer_vk" placeholder="vk.com/examlpe">
+                    </label>
+                </div>
+
+                <div class="feed-back__message">
+                    <label class="feed-back__message-head" for="text">Текст отзыва
+                        <textarea class="feed-back__message-text" id="text" placeholder="Мне понравилось">
+                    </textarea>
+                    </label>
+                </div>
+
+                <div class="feed-back__avatar">
+                    <h3 class="feed-back__avatar-head">Отображать фото в отзыве?</h3>
+
+                    <label class="feed-back__avatar-radio">Да
+                        <input class="feed-back__avatar-input" id="radio-yes" type="radio" form="review" name="radio" checked="checked">
+                        <div class="feed-back__radio-style"></div>
+                    </label>
+
+                    <label class="feed-back__avatar-radio">Нет
+                        <input class="feed-back__avatar-input" id="radio-no" type="radio" form="review" name="radio">
+                        <div class="feed-back__radio-style"></div>
+                    </label>
+                </div>
+                <button type="button" class="feed-back__send"><span class="feed-back__send-mark">Отправить</span></button>
+
+            </form>
+            <!-- </div> -->
         </div>
     </div>
     <footer class="footer">
         <div class="container">
+
             <div class="container__left-col">
-                <div class="maked-by">
-                    <p>Сделано с любовью и старанием <br>
-                        на курсе «HTML + CSS» в <a href="#" class="maked-by__loftschool">LoftSchool</a><br>
-                        Автор работы: <span class="maked-by__name">Прохладов Вадим</span></p>
-                </div>
+
+                <!-- <div class="designer">  -->
+                <!-- /*???*/ внешний вид блока напрямую в <p>*/ -->
+                <p class="designer">Сделано с любовью и старанием на курсе «HTML + CSS» в
+                    <a href="#" class="designer__loftschool">
+                        LoftSchool
+                    </a>
+                    Автор работы: <span class="designer__name">Прохладов Вадим</span>
+                </p>
+                <!-- </div> -->
+
             </div>
-            <div class="container__center-col">
-                <a href="#" class="logo">
-                    <img src="./air_planet_png/logo_company.png" class="logo__pic" alt="Торговый знак компании">
-                </a>
-            </div>
+
+            <a href="#" class="logo">Сайт компании
+                <!-- вставить ссылку на pages -->
+                <img src="./air_planet_png/logo_company.png" class="logo__pic" alt="Trade mark">
+                <!-- логотип компании - контентное изображение -->
+            </a>
+
             <div class="container__right-col">
                 <div class="social">
                     <h3 class="social__head">Наши социальные сети</h3>
                     <ul class="social__icons">
-                        <li class="social__icon">
+                        <li class="social__item">
                             <a href="http://www.vk.com" class="social__link social__link-vk">http://www.vk.com
                             </a>
                         </li>
-                        <li class="social__icon">
+                        <li class="social__item">
                             <a href="http://www.facebook.com" class="social__link social__link-fb">http://www.facebook.com
                             </a>
                         </li>
-                        <li class="social__icon">
+                        <li class="social__item">
                             <a href="http://www.google.com" class="social__link social__link-gl">http://www.google.com
                             </a>
                         </li>
-                        <li class="social__icon">
+                        <li class="social__item">
                             <a href="http://www.twitter.com" class="social__link social__link-tw">http://www.twitter.com
                             </a>
                         </li>
-                        <li class="social__icon">
+                        <li class="social__item">
                             <a href="http://www.mail.ru" class="social__link social__link-mail">http://www.mail.ru
                             </a>
                         </li>
