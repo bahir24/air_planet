@@ -1,8 +1,9 @@
 .designer {
-    color: #fff;
+    
     font-size: 14px;
-    margin: 10px 10px 10px 10px;
-    max-width: 233px;    /*минимальная ширина (будет сужаться если не останется места)*/
+    /* margin: 10px 10px 10px 10px; */
+    max-width: 233px;   /*  минимальная ширина (будет сужаться если не останется места) */
+    line-height: 18px;
 }
 
 .designer__loftschool {

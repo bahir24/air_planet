@@ -184,44 +184,50 @@
                 <!-- выровнять элементы формы внутри серого поля padding  -->
 
                 <!-- action="./reviews_input.html" enctype="text/plain" method="POST" -->
-                <label class="feed-back__head" for="первое поле для ввода">Оставить отзыв</label>
+                <label class="feed-back__head" for="first-field">Оставить отзыв</label>
 
 
                 <!-- <div class="feed-back__insert"> -->
 
-                <div class="feed-back__insert">
-                    <label class="feed-back__insert-head">Ваше имя
-                        <input class="feed-back__insert-field" id="name" type="text" name="reviuer_name" placeholder="Андрей">
+                
+                    <label class="feed-back__insert">
+                        <h3 class="feed-back__insert-head">Ваше имя</h3>
+                        <input class="feed-back__insert-field" type="text" id="first-field" name="reviuer_name" placeholder="Андрей">
                     </label>
-                </div>
+                
 
-                <div class="feed-back__insert">
-                    <label for="vk" class="feed-back__insert-head">Ссылка на профиль VK
-                        <input class="feed-back__insert-field" id="vk" type="text" name="reviuer_vk" placeholder="vk.com/examlpe">
+                
+                    <label class="feed-back__insert">
+                        <h3 class="feed-back__insert-head">Ссылка на профиль VK</h3>
+                        <input class="feed-back__insert-field" type="text" name="reviuer_vk" placeholder="vk.com/examlpe">
                     </label>
-                </div>
+                
 
-                <div class="feed-back__message">
-                    <label class="feed-back__message-head" for="text">Текст отзыва
-                        <textarea class="feed-back__message-text" id="text" placeholder="Мне понравилось">
-                    </textarea>
+                
+                    <label class="feed-back__insert feed-back__general">
+                        <h3 class="feed-back__insert-head">Текст отзыва</h3>
+                        <textarea class="feed-back__insert-field feed-back__message" placeholder="Текст вашего отзыва"></textarea>
                     </label>
-                </div>
+                
 
-                <div class="feed-back__avatar">
-                    <h3 class="feed-back__avatar-head">Отображать фото в отзыве?</h3>
+                
+                    <label class="feed-back__avatar">
+                        <h3 class="feed-back__insert-head">Отображать фото в отзыве?</h3>
+                        <label class="feed-back__radio">
+                            <input class="feed-back__avatar-input" type="radio" form="feed-back" name="radio" checked="checked">
+                            <h3 class="feed-back__insert-head feed-back__radiobutton">Да</h3>
+                        </label>
 
-                    <label class="feed-back__avatar-radio">Да
-                        <input class="feed-back__avatar-input" id="radio-yes" type="radio" form="review" name="radio" checked="checked">
-                        <div class="feed-back__radio-style"></div>
+                        <label class="feed-back__radio">
+                            <input class="feed-back__avatar-input" type="radio" form="feed-back" name="radio">
+                            <h3 class="feed-back__insert-head feed-back__radiobutton">Нет</h3>
+                        </label>
                     </label>
 
-                    <label class="feed-back__avatar-radio">Нет
-                        <input class="feed-back__avatar-input" id="radio-no" type="radio" form="review" name="radio">
-                        <div class="feed-back__radio-style"></div>
-                    </label>
-                </div>
-                <button type="button" class="feed-back__send"><span class="feed-back__send-mark">Отправить</span></button>
+
+                <button type="button" class="feed-back__send">
+                    <h3 class="feed-back__send-head">Отправить</h3>
+                </button>
 
             </form>
             <!-- </div> -->
@@ -240,14 +246,12 @@
                     </a>
                     Автор работы: <span class="designer__name">Прохладов Вадим</span>
                 </p>
-                <!-- </div> -->
-
+                
             </div>
 
-            <a href="#" class="logo">Сайт компании
-                <!-- вставить ссылку на pages -->
+            <a href="#" class="logo">Сайт компании                
                 <img src="./air_planet_png/logo_company.png" class="logo__pic" alt="Trade mark">
-                <!-- логотип компании - контентное изображение -->
+                <!-- логотип компании - контентное изображение  -->
             </a>
 
             <div class="container__right-col">

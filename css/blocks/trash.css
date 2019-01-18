@@ -196,6 +196,38 @@
     font-weight: bold;
 }
 
-/*maked-by (сделано с любовью...)*/
 
 
+
+ .feed-back__message::-webkit-input-placeholder {
+    color:#000000; 
+}
+
+.feed-back__message:focus::-webkit-input-placeholder {
+    color:transparent; 
+}
+
+.feed-back__message::-moz-placeholder {
+    color:#000000; 
+}
+
+.feed-back__message:focus::-moz-placeholder {
+    color:transparent; 
+}
+
+.feed-back__message:-moz-placeholder {
+    color:#000000; 
+}
+.feed-back__message:focus:-moz-placeholder {
+    color:transparent; 
+}
+
+.feed-back__message:-ms-input-placeholder {
+    color:#000000; 
+}
+
+.feed-back__message:focus:-ms-input-placeholder {
+    color:transparent; 
+}
+
+/* plaseholder для textarea */

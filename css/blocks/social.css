@@ -1,9 +1,3 @@
-.social {
-    margin: 10px 10px 10px 10px;
-    color: #fff;
-    height: 100%;
-}
-
 .social__head {
     font-size: 14px;
     font-weight: bold;
@@ -16,7 +10,7 @@
 }
 
 .social__item {
-    margin-right: 5px; /*отталкиваем соседние ссылки вправо*/
+    margin-right: 10px; /*отталкиваем соседние ссылки вправо*/
 }
 
 .social__link {
