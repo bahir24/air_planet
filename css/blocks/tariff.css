@@ -1,6 +1,6 @@
 .tariff {
     margin-bottom: 49px;
-    width: 90%;
+    width: 100%;
 }
 
 .tariff__head {
@@ -18,12 +18,11 @@
 }
 
 .tariff__type {
-    box-sizing: border-box;
-    display: flex;
+    box-sizing: content-box;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
-    padding: 40px 31px 36px;
+    width: 28.44%;    
     font-size: 18px;
     margin-right: 20px;
     border: 1px solid #e8e9ed;
@@ -62,9 +61,11 @@
 }
 
 .tariff__description {
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    /* width: 100%; */
  
 }
 
@@ -84,9 +85,9 @@
 }
 
 .tariff__offer {
-    list-style-position: outside;
+    /* list-style-position: outside; */
     margin-bottom: 12px;
-    padding-left: 21px;
+    padding-left: 27px;
 }
 
 .tariff__services {        
