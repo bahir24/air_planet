@@ -29,7 +29,20 @@
             </header>
             <div class="container">
                 <div class="page-content">
-                    <div class="breadcrumbs">
+                        <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item ">
+                                        <a href="./index.html" class="menu__link menu__index">Главная</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="./reviews.html" class="menu__link menu__reviews">Отзывы</a>
+                                    </li>
+                                    <li class="menu__item menu__item-active">
+                                        <a href="#" class="menu__link menu__team">Экипаж</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                    <!-- <div class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li class="breadcrumbs__item">
                                 <a href="./index.html" class="breadcrumbs__link">Главная</a>
@@ -38,7 +51,7 @@
                                 <a href="#" class="breadcrumbs__link">Экипаж</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="team">
                         <h1 class="team__head">Экипаж</h1>
                         <ul class="team__people">
@@ -135,44 +148,57 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="partners">
-                        <h1 class="partners__head">Партнеры</h1>
-                        <ul class="partners__list">
-                            <li class="partners__item">
-                                <img src="./air_planet_png/partners/BMP_company.png" alt="BMP company" class="partners__item-pic">
-                            </li>
-                            <li class="partners__item">
-                                <img src="./air_planet_png/partners/Tetra_install.png" alt="Tetra install" class="partners__item-pic">
-                            </li>
-                            <li class="partners__item">
-                                <img src="./air_planet_png/partners/Siberian_lines.png" alt="Siberian_lines" class="partners__item-pic">
-                            </li>
-                            <li class="partners__item">
-                                <img src="./air_planet_png/partners/One_air.png" alt="One air" class="partners__item-pic">
-                            </li>
-                            <li class="partners__item">
-                                <img src="./air_planet_png/partners/BingAir.png" alt="BingAir" class="partners__item-pic">
-                            </li>
-                            <li class="partners__item">
-                                <img src="./air_planet_png/partners/Ural.png" alt="Ural" class="partners__item-pic">
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
                 <aside class="sidebar">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item ">
-                                <a href="./index.html" class="menu__link menu__index">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="./reviews.html" class="menu__link menu__reviews">Отзывы</a>
-                            </li>
-                            <li class="menu__item menu__item-active">
-                                <a href="#" class="menu__link menu__team">Экипаж</a>
-                            </li>
-                        </ul>
-                    </nav>
+                        <div class="partners">
+                            <h1 class="partners__head">Партнёры</h1>
+                            <ul class="partners__list">                                   
+                                <li class="partners__item">
+                                    <img src="./air_planet_png/partners/Siberian_lines.png" alt="Siberian_lines" class="partners__item-pic">
+                                </li>
+                                <li class="partners__item">
+                                    <img src="./air_planet_png/partners/Ural.png" alt="Ural" class="partners__item-pic">
+                                </li>
+                                <li class="partners__item">
+                                    <img src="./air_planet_png/partners/BMP_company.png" alt="BMP company" class="partners__item-pic">
+                                </li>
+                                <li class="partners__item">
+                                    <img src="./air_planet_png/partners/One_air.png" alt="One air" class="partners__item-pic">
+                                </li>
+                                <li class="partners__item">
+                                    <img src="./air_planet_png/partners/Tetra_install.png" alt="Tetra install" class="partners__item-pic">
+                                </li>
+                                <li class="partners__item">
+                                    <img src="./air_planet_png/partners/BingAir.png" alt="BingAir" class="partners__item-pic">
+                                </li>                                    
+                            </ul>
+                        </div>
+                        <div class="social">
+                                <h3 class="social__head">Наши социальные сети</h3>
+                                <ul class="social__icons">
+                                    <li class="social__item">
+                                        <a href="http://www.vk.com" class="social__link social__link-vk">http://www.vk.com
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="http://www.facebook.com" class="social__link social__link-fb">http://www.facebook.com
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="http://www.google.com" class="social__link social__link-gl">http://www.google.com
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="http://www.twitter.com" class="social__link social__link-tw">http://www.twitter.com
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="http://www.mail.ru" class="social__link social__link-mail">http://www.mail.ru
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                 </aside>
             </div>
         </div>
@@ -180,9 +206,7 @@
             <div class="container">
     
                 <div class="container__left-col">
-    
-                    <!-- <div class="designer">  -->
-                    <!-- /*???*/ внешний вид блока напрямую в <p>*/ -->
+
                     <p class="designer">Сделано с любовью и старанием на курсе «HTML + CSS» в
                         <a href="#" class="designer__loftschool">
                             LoftSchool
@@ -191,38 +215,12 @@
                     </p>
                     
                 </div>
-    
-                <a href="#" class="logo">Сайт компании                
-                    <img src="./air_planet_png/logo_company.png" class="logo__pic" alt="Trade mark">
-                    <!-- логотип компании - контентное изображение  -->
-                </a>
-    
+                        
                 <div class="container__right-col">
-                    <div class="social">
-                        <h3 class="social__head">Наши социальные сети</h3>
-                        <ul class="social__icons">
-                            <li class="social__item">
-                                <a href="http://www.vk.com" class="social__link social__link-vk">http://www.vk.com
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="http://www.facebook.com" class="social__link social__link-fb">http://www.facebook.com
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="http://www.google.com" class="social__link social__link-gl">http://www.google.com
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="http://www.twitter.com" class="social__link social__link-tw">http://www.twitter.com
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="http://www.mail.ru" class="social__link social__link-mail">http://www.mail.ru
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <a href="#" class="logo">Сайт компании                
+                            <img src="./air_planet_png/logo_company.png" class="logo__pic" alt="Trade mark">
+                            <!-- логотип компании - контентное изображение  -->
+                    </a>
                 </div>
             </div>
         </footer>

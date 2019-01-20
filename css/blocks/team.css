@@ -1,7 +1,7 @@
 .team {
     box-sizing: border-box;
-    margin-bottom: 2px;
-    /* padding-left: 3px; */
+    margin-bottom: 35px;
+    margin-top: 38px;
 }
 
 .team__head {
@@ -9,6 +9,7 @@
     line-height: 40px;
     font-weight: bold;
     margin-bottom: 47px;
+    
     
 }
 
