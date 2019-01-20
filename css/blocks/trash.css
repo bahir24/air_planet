@@ -231,3 +231,51 @@
 }
 
 /* plaseholder для textarea */
+<div class="tariff">
+    <h2 class="tariff__head">Тарифы</h2>
+    <ul class="tariff__block">
+        <li class="tariff__type">
+            <div class="tariff__label tariff__label-flower"></div>
+            <div class="tariff__description">
+                <h3 class="tariff__name">Стандарт</h3>
+                <p class="tariff__character">Создан для вашего комфортного отдыха
+                </p>
+                <ul class="tariff__offer">
+                    <li class="tariff__services">Питание включено</li>
+                    <li class="tariff__services">Багаж (5 кг)</li>
+                    <li class="tariff__services">Детское кресло</li>
+                </ul>
+                <div class="tariff__price">$19</div>
+            </div>
+        </li>
+        <li class="tariff__type">
+            <div class="tariff__label tariff__label-star"></div>
+            <div class="tariff__description">
+                <h3 class="tariff__name">Премиум</h3>
+                <p class="tariff__character">Для любителей хороших впечатлений
+                </p>
+                <ul class="tariff__offer">
+                    <li class="tariff__services">Питание включено</li>
+                    <li class="tariff__services">Багаж (5 кг)</li>
+                    <li class="tariff__services">Детское кресло</li>
+                </ul>
+                <div class="tariff__price">$39</div>
+            </div>
+        </li>
+        <li class="tariff__type">
+            <div class="tariff__label tariff__label-palette"></div>
+            <div class="tariff__description">
+                <h3 class="tariff__name">Лакшери</h3>
+                <p class="tariff__character">Всё самое лучшее и незабываемое
+                </p>
+                <ul class="tariff__offer">
+                    <li class="tariff__services">Питание включено</li>
+                    <li class="tariff__services">Багаж (5 кг)</li>
+                    <li class="tariff__services">Детское кресло</li>
+                </ul>
+                <div class="tariff__price">$99</div>
+            </div>
+        </li>
+    </ul>
+</div>
+/* старый блок с тарифами */

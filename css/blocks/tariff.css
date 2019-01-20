@@ -15,21 +15,27 @@
     justify-content: flex-start;
     width: 100%;   
     list-style-position: outside;
+    margin-bottom: 58px;
 }
 
 .tariff__type {
+    
     box-sizing: content-box;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    width: 28.44%;    
+    width: 86.3492%;    
     font-size: 18px;
-    margin-right: 20px;
+    margin: 0 18px;
     border: 1px solid #e8e9ed;
 }
 
-.tariff__type:nth-child(2n+1)  {  
+/* .tariff__type:nth-child(2n+1)  {  
     border: none;
+} */
+
+.tariff__type:nth-child(n+2)  {  
+    display: none;
 }
 
 .tariff__label {
@@ -40,7 +46,10 @@
     border: none;
     margin-bottom: 31px;
     border-radius: 34px;
+    display: none;
 }
+
+
 
 .tariff__label-flower {
     background-image: url('../../air_planet_png/tariff_icon/flower.png');
@@ -61,12 +70,19 @@
 }
 
 .tariff__description {
-    padding: 0 25px;
+    padding: 28px 46px 0 43px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* width: 100%; */
- 
+}
+
+.tariff__description:before {
+    content: "Топ-тариф";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 28px;
 }
 
 .tariff__name {
@@ -75,19 +91,18 @@
     text-transform: uppercase;
     letter-spacing: 2.3px;
     font-weight: bold;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
 }
 
 .tariff__character {
-    text-align: center;
-    margin-bottom: 9px; 
+    /* text-align: center; */
+    margin-bottom: 12px; 
     line-height: 30px;
 }
 
 .tariff__offer {
-    /* list-style-position: outside; */
-    margin-bottom: 12px;
-    padding-left: 27px;
+    margin-bottom: 1px;
+    /* padding-left: 32px; */
 }
 
 .tariff__services {        
@@ -97,19 +112,21 @@
 
 .tariff__services::before {
     content: "\2022";
-    margin-right: 22px;
-    position: absolute;
-    margin-left: -27px;
+    margin-right: 18px;
+    /* position: absolute; */
+    /* margin-left: -27px; */
 }
 
-.tariff__price {
-   
+.tariff__price {   
     text-align: center;
     font-size: 54px;
     font-weight: light-italic;
-    letter-spacing: -1.07px;;
+    /* letter-spacing: 1px; */
+    padding-left: 8px;
 }
 
 .tariff__price::first-letter {
-    font-size: 32px;
+    font-size: 30px;
+    vertical-align: 3px;
+    margin-right: 3px;
 }

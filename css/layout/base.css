@@ -49,16 +49,18 @@ html, body {
 }
 
 .container__left-col {
-    margin-left: 17px;
+    margin-left: 22px;
 }
 
 .page-content {
     order: 10;
-    width: 73.25%;
+    width: 73.75%;
     height: 100%;
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     width: 26.25%;
     order: -10;
    

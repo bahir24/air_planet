@@ -2,6 +2,7 @@
   margin: 0;
   /* padding-top: 32px;
   padding-left: 21px; */
+  margin-bottom: 11px;
 }
 
 /* .menu-list {
@@ -10,7 +11,8 @@
 
 .menu__item {
     display: inline-flex;
-  margin-bottom: 29px;
+  /* margin-bottom: 29px; */
+  margin-right: 91px;
 }
 
 .menu__item-active {
