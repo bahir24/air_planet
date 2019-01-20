@@ -1,6 +1,8 @@
 .support {
     margin: 0 auto;
-    max-width: 58%;
+    
+    text-align: center;
+    
 }
 
 .support__link-site {

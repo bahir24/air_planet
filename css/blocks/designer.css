@@ -4,6 +4,7 @@
     /* margin: 10px 10px 10px 10px; */
     max-width: 233px;   /*  минимальная ширина (будет сужаться если не останется места) */
     line-height: 18px;
+    margin-left: 16px;
 }
 
 .designer__loftschool {
